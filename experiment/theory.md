@@ -25,19 +25,20 @@ It is a circuit designed with Op-Amp in such a way that it performs the mathamet
 </div>
 
 Since, the Output voltage is the potential difference accross capacitor.
-$$ V_C = \frac{Q}{C}	$$<br>					           
-or,   $$V_C = V_X - V_{OUT} = -V_{OUT}$$                          <br>              
-therefore  \(-\frac{dVout}{dt} =\frac{1}{C} \times \frac{dQ}{dt}   \)                    	<br>
-\(\frac{dQ}{dt} \) is the current as the \(V_x\) is 0.<br>
+$$V_C = \frac{Q}{C}$$				           
+or,   $$V_C = V_X - V_{OUT} = -V_{OUT}$$                                     
+$$therefore -\frac{dVout}{dt} =\frac{1}{C} \times \frac{dQ}{dt}$$                    	
+$$\frac{dQ}{dt} is the current as the V_x is 0.$$
 and input current can be written as<br>
          $$I_{IN} = \frac{(V_{IN} -0)}{R_{IN}}  $$                                       <br>                                           
-and current through capacitor  (\(I_f\)) can be  written as <br>
-         $$I_f = C \times \frac{dVout}{dt} = C \times \frac{1}{C} \times \frac{dQ}{dt} = \frac{dQ}{dt}$$    <br>
-Assuming the ideal Op-amp its input impedance is infinite so no current pass through it.<br>
-         $$I_{IN} = I_f =\frac{V_{IN} }{R_{IN}} = C \times \frac{dVout}{dt}     $$                            <br>
-therefor,  $$\frac{V_{IN}}{V_{OUT}} \times \frac{dt}{R_{IN} \times C} = 1    $$                                  <br>
-so, $$V_{OUT} = -\frac{1}{R_{IN} \times C}  &int; Vin. dt     $$                                    <br>
-or,$$ V_{OUT}  =-\frac{1}{j \times &omega; R_{IN} \times C} \times V_{IN}      $$                                                                     <br>
+and current through capacitor  \\(I_f\\) can be  written as 
+         $$I_f = C \times \frac{dVout}{dt} = C \times \frac{1}{C} \times \frac{dQ}{dt} = \frac{dQ}{dt}$$   
+Assuming the ideal Op-amp its input impedance is infinite so no current pass through it.
+         $$I_{IN} = I_f =\frac{V_{IN} }{R_{IN}} = C \times \frac{dVout}{dt}$$                            
+therefor,  $$\frac{V_{IN}}{V_{OUT}} \times \frac{dt}{R_{IN} \times C} = 1$$                                  
+so, $$V_{OUT} = -\frac{1}{R_{IN} \times C}  &int; Vin. dt$$                                   
+or, 
+$$V_{OUT}  =-\frac{1}{j \times &omega; R_{IN} \times C} \times V_{IN}$$                                                                    
 where (-) sing indicates 108 degree phase shift.
 
 
